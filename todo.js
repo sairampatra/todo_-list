@@ -2,7 +2,7 @@ const inputbox = document.querySelector('.inputbox')
 const tasks = document.querySelector('.tasks')
 function cut(){
 
-if(inputbox.value=='arpita'){
+if(inputbox.value=='a'){
 let count=0;
   function jhampri(){
     if(count<1000000){ 
