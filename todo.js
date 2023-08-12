@@ -2,10 +2,10 @@ const inputbox = document.querySelector('.inputbox')
 const tasks = document.querySelector('.tasks')
 function cut(){
 
-if(inputbox.value=='arpita'){
+if(inputbox.value=='arpita'||inputbox.value=='Arpita'){
 let count=0;
   function jhampri(){
-    if(count<1000000){ 
+    if(count<10000){
  let li =document.createElement('li');
   li.innerHTML='JHAMPRI';
   tasks.appendChild(li);
@@ -21,6 +21,17 @@ let count=0;
   localstorage()
   
 }
+ else if(inputbox.value=='clear'){
+    localStorage.clear()
+    let hasReloaded = false;
+function reloadPageOnce() {
+  if (!hasReloaded) {
+    window.location.reload();
+    hasReloaded = true;
+  }
+} 
+   reloadPageOnce()
+ }
   else{
     if (inputbox.value==''){
   alert('you must write somthing');
